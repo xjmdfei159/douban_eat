@@ -1,3 +1,13 @@
+todo
+1.照片不能被覆盖
+2.照片的title & 喜欢数
+3.如果是gif 则显示gif图
+
+
+
+
+
+done
 1.douban美食网站 ：https://www.douban.com/subject/all?cat_id=1000&start=14200  （start from 0 to 14200）
 2.循环start从0-14200 爬所有的jpg图片 
 
