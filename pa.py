@@ -45,9 +45,10 @@ def get_img(html):
 	return imagepic
 
 def main():
-	html = get_html("https://www.douban.com/subject/10734163/")
+	for i in range(0,3):
+		test = 'https://www.douban.com/subject/all?cat_id=1000&start=' + str(20*i)
+		html = get_html(test)
 
-
-	print (get_img(html))
+		print (get_img(html))
 if __name__ == "__main__":
 	main()
