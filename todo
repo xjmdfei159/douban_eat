@@ -2,6 +2,8 @@ todo
 1.照片不能被覆盖
 2.照片的title & 喜欢数
 3.如果是gif 则显示gif图
+4.body div id class ul
+5.openpyxl 可以读取excel
 
 
 
