@@ -13,7 +13,7 @@ from bs4 import BeautifulSoup
 import urllib
 
 def main():
-	for i in range(0,20):
+	for i in range(0,30):
 		html_doc = 'https://www.douban.com/subject/all?cat_id=1000&start=' + str(20*i)
 		page = urllib.urlopen(html_doc)
 		#html = page.read()
