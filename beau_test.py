@@ -44,11 +44,12 @@ def write_excel():
 	wb = load_workbook(filename='haha.xlsx')
 	ws = wb['hsdf']
 	#测试用 后面循环~~~
-	ws.cell('A1').value = kabi[0][0]
-	ws.cell('B1').value = kabi[0][1]
-	ws.cell('C1').value = kabi[0][2]
-	ws.cell('D1').value = kabi[0][3]
-	ws.cell('A2').value = kabi[1][0]
+	for i in range(0,len(kabi)):
+		ws.cell(row = i+1,column = 1).value = kabi[i][0]
+		ws.cell(row = i+1,column = 2).value = kabi[i][1]
+		ws.cell(row = i+1,column = 3).value = kabi[i][2]
+		ws.cell(row = i+1,column = 4).value = kabi[i][3]
+
 	wb.save(filename='haha.xlsx')
 
 def main():
