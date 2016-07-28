@@ -9,6 +9,7 @@ sword = "1:9,30|2:9,30|3:99,300|5:4,15|9:2,9"
 sword_split = sword.split('|')
 sword_prob = []
 base_num = 1
+#for 循环
 probA_num = 1+random.randint(0,3)
 probB_num = 1+random.randint(0,3)
 probC_num = 1+random.randint(0,3)
@@ -19,6 +20,7 @@ sword_simu_num = sum(sword_prob_num)
 sword_extra_num = 0
 sword_max_num = 15
 print(sword_prob_num)
+#for 循环寻找最小值 先随机然后在+1
 print(sword_prob_num.index(min(sword_prob_num)))
 def simu_num():
 	if(sword_simu_num==sword_max_num):
